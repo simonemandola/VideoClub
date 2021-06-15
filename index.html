@@ -9,9 +9,191 @@
     <meta name="author" content="Simone, Paula, Jorge">
     <meta name="keywords" content="videoclub, alquiler de películas, alquilar películas en valencia">
     <meta name="description" content="Este sitio web se dedica al alquiler de las mejores películas de todos los tiempos.">
+    <!-- Tailwind CSS -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- JS -->
+    <script defer src="assets/js/code.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
+<header>
+    <div class="container mx-auto bg-white border-b w-full h-16 p-4 flex items-center justify-between box-border">
+        <div class="container w-24 h-full">
+            <a class="w-full h-full inline-block" href="index.html">
+                <img class="w-full object-contain" src="assets/img/logo.png" alt="Logo Stromboli VideoClub">
+            </a>
+        </div>
+        <button class="w-6 h-6 focus:outline-none" type="button" id="btnMenu">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+    </div>
+    <div class="container mx-auto w-screen h-0 bg-red-800 flex items-center justify-center overflow-hidden transition-all duration-1000 ease-in-out menu-collapse">
+        <nav>
+            <ul class="text-white">
+                <li class="text-4xl h-16 block"><a href="index.html"><i class="fas fa-home text-3xl pr-2"></i>Inicio</a></li>
+                <li class="text-4xl h-16 block"><a href="page/movies.html"><i class="fas fa-film text-3xl pr-2"></i>Películas</a></li>
+                <li class="text-4xl h-16 block"><a href="page/contact.html"><i class="fas fa-headset text-3xl pr-2"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="landing container w-full h-screen mb-16 flex flex-col items-center justify-between px-4 md:flex-row md:px-16 md:gap-x-4">
+    <div class="w-full flex flex-col items-start justify-center">
+        <h1 class="custom-col w-full text-7xl font-extrabold my-12">Pulp Fiction</h1>
+        <p class="custom-col"><span class="custom-col font-medium">Vincent</span> y <span class="custom-col font-medium">Jules</span> trabajan para Marsellus Wallace, un gánster que controla los negocios oscuros de la ciudad, entre ellos, las apuestas. Los dos matones tienen diferentes misiones que cumplir para Marsellus. La principal de ellas es
+            <span class="custom-col font-medium">recuperar un maletín misterioso.</span></p>
+        <a class="inline-block px-8 py-2 mb-12 text-white bg-red-800 rounded mt-8" href="#">Alquilar</a>
+    </div>
+    <div class="w-full h-full flex items-center justify-center">
+        <video class="w-full" autoplay muted loop controls src="assets/video/pulp-fiction-trailer.mp4">
+            <p>Tu Navegador no puede reproducir el video, haz clic <a href="assets/video/pulp-fiction-trailer.mp4" download="Pulp Fiction Trailer">aquí</a> para descargarlo.</p>
+        </video>
+    </div>
+</section>
+<section class="estrenos w-full h-2/4 mb-16 px-16 pb-16 md:pl-16">
+    <div class="w-full">
+        <h1 class="custom-col w-full text-7xl font-extrabold">Estrenos</h1>
+    </div>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/50-sombras.jpg" alt="50 Sombras de Grey">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/back-to-the-future.jpg" alt="Regreso al futuro">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/depeche-mode.jpg" alt="Depeche mode">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/el-padrino.jpg" alt="El Padrino">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/el-silencio-de-los-corderos.jpg" alt="El Silencio de los Corderos">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/erase-una-vez-en-hollywood.jpg" alt="Érase una vez en Hollywood">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/gozilla-kong.jpg" alt="Godzilla vs Kong">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/idus-de-marzo.jpg" alt="Idus de Marzo">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/inception.jpg" alt="Inception">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<section class="mas-vistas bg-red-800 w-full h-2/4 mb-16 p-16 md:pl-16">
+    <div class="w-full">
+        <h1 class="text-white w-full text-7xl font-extrabold">Las más vistas</h1>
+    </div>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/joker.jpg" alt="Joker">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/kurosawa.jpg" alt="Kurosawa">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/mib.jpg" alt="Men in Black">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/pull-fiction.jpg" alt="Pulp Fiction">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/rec.jpg" alt="REC">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/rec2.jpg" alt="REC2">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/taxi-driver.jpg" alt="Taxi Driver">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/titanic.jpg" alt="Titanic">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/venom.jpg" alt="Venom">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<section class="clasicos w-full h-2/4 mb-16 p-16 md:pl-16">
+    <div class="w-full">
+        <h1 class="custom-col w-full text-7xl font-extrabold">Clásicos</h1>
+    </div>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/back-to-the-future.jpg" alt="Regreso al futuro">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/el-silencio-de-los-corderos.jpg" alt="El Silencio de los Corderos">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/pull-fiction.jpg" alt="Pulp Fiction">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/titanic.jpg" alt="Titanic">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/mib.jpg" alt="Men in Black">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/el-padrino.jpg" alt="El Padrino">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/taxi-driver.jpg" alt="Taxi Driver">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/inception.jpg" alt="Inception">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/depeche-mode.jpg" alt="Depeche Mode">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
 
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
 </body>
 </html>
