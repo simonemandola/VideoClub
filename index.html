@@ -16,6 +16,8 @@
     <script defer src="assets/js/code.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -66,5 +68,146 @@
         </video>
     </div>
 </section>
+<section class="estrenos w-full h-2/4 mb-16 px-16 pb-16 md:pl-16">
+    <div class="w-full">
+        <h1 class="custom-col w-full text-7xl font-extrabold">Estrenos</h1>
+    </div>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/50-sombras.jpg" alt="50 Sombras de Grey">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/back-to-the-future.jpg" alt="Regreso al futuro">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/depeche-mode.jpg" alt="Depeche mode">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/el-padrino.jpg" alt="El Padrino">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/el-silencio-de-los-corderos.jpg" alt="El Silencio de los Corderos">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/erase-una-vez-en-hollywood.jpg" alt="Érase una vez en Hollywood">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/gozilla-kong.jpg" alt="Godzilla vs Kong">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/idus-de-marzo.jpg" alt="Idus de Marzo">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/inception.jpg" alt="Inception">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<section class="mas-vistas bg-red-800 w-full h-2/4 mb-16 p-16 md:pl-16">
+    <div class="w-full">
+        <h1 class="text-white w-full text-7xl font-extrabold">Las más vistas</h1>
+    </div>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/joker.jpg" alt="Joker">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/kurosawa.jpg" alt="Kurosawa">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/mib.jpg" alt="Men in Black">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/pull-fiction.jpg" alt="Pulp Fiction">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/rec.jpg" alt="REC">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/rec2.jpg" alt="REC2">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/taxi-driver.jpg" alt="Taxi Driver">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/titanic.jpg" alt="Titanic">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/venom.jpg" alt="Venom">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<section class="clasicos w-full h-2/4 mb-16 p-16 md:pl-16">
+    <div class="w-full">
+        <h1 class="custom-col w-full text-7xl font-extrabold">Clásicos</h1>
+    </div>
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/img/back-to-the-future.jpg" alt="Regreso al futuro">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/el-silencio-de-los-corderos.jpg" alt="El Silencio de los Corderos">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/pull-fiction.jpg" alt="Pulp Fiction">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/titanic.jpg" alt="Titanic">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/mib.jpg" alt="Men in Black">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/el-padrino.jpg" alt="El Padrino">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/taxi-driver.jpg" alt="Taxi Driver">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/inception.jpg" alt="Inception">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/img/depeche-mode.jpg" alt="Depeche Mode">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
 </body>
 </html>
