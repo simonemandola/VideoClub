@@ -20,28 +20,42 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
-<header>
-    <div class="container mx-auto bg-white border-b w-full h-16 p-4 flex items-center justify-between box-border">
-        <div class="container w-24 h-full">
-            <a class="w-full h-full inline-block" href="index.html">
-                <img class="w-full object-contain" src="assets/img/logo.png" alt="Logo Stromboli VideoClub">
-            </a>
+    <header>
+        <div class="container fixed top-0 mx-auto bg-white border-b w-full h-16 p-4 flex items-center justify-between box-border">
+            <div class="container w-24 h-full">
+                <a class="w-full h-full inline-block" href="index.html">
+                    <img class="w-full object-contain" src="assets/img/logo.png" alt="Logo Stromboli VideoClub">
+                </a>
+            </div>
+            <div class="flex justify-end items-center gap-x-4">
+                <button class="w-6 h-6 focus:outline-none" type="button" id="btnSearch">
+                    <i class="fas fa-search custom-col text-xl"></i>
+                </button>
+                <button class="w-6 h-6 focus:outline-none" type="button" id="btnMenu">
+                    <i class="fas fa-bars custom-col text-xl"></i>
+                </button>
+            </div>
         </div>
-        <button class="w-6 h-6 focus:outline-none" type="button" id="btnMenu">
-            <i class="fas fa-bars text-xl"></i>
-        </button>
-    </div>
-    <div class="container mx-auto w-screen h-0 bg-red-800 flex items-center justify-center overflow-hidden transition-all duration-1000 ease-in-out menu-collapse">
-        <nav>
-            <ul class="text-white">
-                <li class="text-4xl h-16 block"><a href="index.html"><i class="fas fa-home text-3xl pr-2"></i>Inicio</a></li>
-                <li class="text-4xl h-16 block"><a href="page/movies.html"><i class="fas fa-film text-3xl pr-2"></i>Películas</a></li>
-                <li class="text-4xl h-16 block"><a href="page/contact.html"><i class="fas fa-headset text-3xl pr-2"></i>Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<section class="landing container w-full h-screen mb-16 flex flex-col items-center justify-between px-4 md:flex-row md:px-16 md:gap-x-4">
+        <div class="container fixed mx-auto w-screen h-0 bg-red-800 flex items-center justify-center overflow-hidden transition-all duration-1000 ease-in-out menu-collapse">
+            <nav>
+                <ul class="text-white">
+                    <li class="text-4xl h-16 block"><a href="index.html"><i class="fas fa-home text-3xl pr-2"></i>Inicio</a></li>
+                    <li class="text-4xl h-16 block"><a href="page/movies.html"><i class="fas fa-film text-3xl pr-2"></i>Películas</a></li>
+                    <li class="text-4xl h-16 block"><a href="page/contact.html"><i class="fas fa-headset text-3xl pr-2"></i>Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container fixed mx-auto w-screen h-0 px-4 bg-red-800 flex flex-col items-center justify-center overflow-hidden transition-all duration-1000 ease-in-out search-collapse">
+            <form class="w-full relative flex flex-col items-center justify-center">
+                <label for="inputSearch" class="text-white font-medium text-xl mb-2">Buscar película</label>
+                <input class="w-full border-0 bg-white rounded-sm p-2 focus:outline-none" type="text" id="inputSearch" placeholder="Regreso al...">
+                <button class="w-6 h-6 absolute top-12 right-2 -mt-1 z-50 focus:outline-none" type="button">
+                    <i class="fas fa-search custom-col text-lg"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+<section class="landing container w-full h-screen mt-16 mb-16 flex flex-col items-center justify-between px-4 md:flex-row md:px-16 md:gap-x-4">
     <div class="w-full flex flex-col items-start justify-center">
         <h1 class="custom-col w-full text-7xl font-extrabold my-12">Pulp Fiction</h1>
         <p class="custom-col"><span class="custom-col font-medium">Vincent</span> y <span class="custom-col font-medium">Jules</span> trabajan para Marsellus Wallace, un gánster que controla los negocios oscuros de la ciudad, entre ellos, las apuestas. Los dos matones tienen diferentes misiones que cumplir para Marsellus. La principal de ellas es
