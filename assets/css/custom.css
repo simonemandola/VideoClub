@@ -3,7 +3,7 @@
 }
 
 @media (min-width: 768px) {
-    .fas.fa-home, .fas.fa-film, .fas.fa-headset {
+    .fas.fa-home, .fas.fa-film, .fas.fa-headset, .fas.fa-money-bill-wave {
         display: none;
     }
 }
