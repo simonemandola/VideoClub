@@ -19,11 +19,9 @@ function openMenu() {
         MENU_COLLAPSE.classList.replace('h-0', 'h-screen');
         MENU_COLLAPSE.classList.add('z-50');
         SEARCH_COLLAPSE.classList.replace('h-screen', 'h-0');
-        MENU_COLLAPSE.classList.remove('sm:opacity-0');
     } else {
         MENU_COLLAPSE.classList.replace('h-screen', 'h-0');
         MENU_COLLAPSE.classList.remove('z-50');
-        MENU_COLLAPSE.classList.add('sm:opacity-0');
     }
 }
 
