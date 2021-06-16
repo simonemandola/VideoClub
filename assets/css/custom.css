@@ -2,6 +2,12 @@
     color: #19323c;
 }
 
+@media (min-width: 768px) {
+    .fas.fa-home, .fas.fa-film, .fas.fa-headset {
+        display: none;
+    }
+}
+
 .swiper-container {
     margin-top: 5rem;
     width: 100%;
