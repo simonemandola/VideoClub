@@ -45,3 +45,126 @@
     color: #ffffff !important;
 
 }
+
+/* FOOTER MOBILE */
+
+.footer__ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: -2rem;
+}
+.footer__li{
+    text-decoration: none;
+    color: darkblue;
+}
+.footer__logos{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.footer__logos-fa{
+    width: 30%;
+}
+.footer__logos-li{
+    width: 30%;
+}
+.footer__logos-me{
+    width: 30%;
+}
+.footer__logos-tw{
+    width: 30%;
+}
+
+.footer__copy{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: -2rem;
+}
+.footer__pc{
+    text-decoration: none;
+    color: darkblue;
+}
+.footer__pp{
+    text-decoration: none;
+    color: darkblue;
+}
+.footer__co{
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* END FOOTER MOBILE */
+
+/* FOOTER DESKTOP */
+
+.footer__ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+    text-decoration: none;
+    font-size: 24px;
+}
+.footer__li{
+    text-decoration: none;
+    color: darkblue;
+}
+.footer__logos{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 3rem;
+    margin-left: 18rem;
+    width: 70%;
+}
+.footer__logos-fa{
+    width: 10%;
+}
+.footer__logos-li{
+    width: 10%;
+}
+.footer__logos-me{
+    width: 10%;
+}
+.footer__logos-tw{
+    width: 10%;
+}
+
+.footer__copy{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-size: 24px;
+}
+.footer__pc{
+    text-decoration: none;
+    color: darkblue;
+}
+.footer__pp{
+    text-decoration: none;
+    color: darkblue;
+    margin-right: 2rem;
+}
+.footer__co{
+    text-decoration: none;
+    color: darkblue;
+    margin-right: 2rem;
+}
+
+/* END FOOTER DESKTOP */
