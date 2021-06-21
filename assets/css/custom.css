@@ -42,3 +42,7 @@
 .banner__top--contact {
     background-image: url("../img/img-contact.jpg")
 }
+
+.mas-vistas, .contacto {
+    background-color: #19323c;
+}

@@ -62,26 +62,34 @@
         </div>
     </div>
 </section>
-<section class="bg-red-800">
-    <div class="flex flex-row">
-        <div class="flex flex-col">
-            <h2>Escríbenos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores exercitationem expedita omnis provident recusandae repellat.</p>
-            <div class="flex flex-row">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>C/ dels Centelles, 17</p>
-                <p>46006 València, Valencia</p>
+<section class="contacto">
+    <div class="flex md:flex-row p-32 items-center flex-col">
+        <div class="flex flex-col text-white">
+            <h2 class="text-7xl font-extrabold mb-4">Escríbenos</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad consectetur culpa doloremque ea, laboriosam nesciunt numquam quaerat qui quis saepe sit sunt veniam voluptas!</p>
+            <div class="flex flex-row pt-8">
+                <i class="fas fa-map-marker-alt pr-6"></i>
+                <div class="flex flex-col">
+                    <p>C/ dels Centelles, 17</p>
+                    <p>46006 València, Valencia</p>
+                </div>
             </div>
-            <div class="flex flex-row">
-                <i class="fas fa-phone-alt"></i>
+            <div class="flex flex-row pt-8 items-center">
+                <i class="fas fa-phone-alt pr-6"></i>
                 <p>+34 963 95 69 80</p>
             </div>
-            <div class="flex flex-row">
-                <i class="fas fa-envelope"></i>
+            <div class="flex flex-row pt-8 items-center">
+                <i class="fas fa-envelope pr-6"></i>
                 <p>contacto@stromboli.com</p>
             </div>
         </div>
-        <div class="">
+        <div class="flex flex-col w-full md:pl-32 pt-20">
+            <form>
+                <input type="text" class="bg-transparent border border-white rounded-md w-full h-12 placeholder-white pl-6 text-xl mb-6 text-white" placeholder="Nombre">
+                <input type="text" class="bg-transparent border border-white rounded-md w-full h-12 placeholder-white pl-6 text-xl mb-6 text-white" placeholder="Email">
+                <input type="text" class="bg-transparent border border-white rounded-md w-full h-12 placeholder-white pl-6 text-xl mb-6 text-white" placeholder="Asunto">
+                <textarea name="mensaje" class="bg-transparent border border-white rounded-md w-full h-40 placeholder-white pl-6 text-xl pt-4 text-white" placeholder="Mensaje"></textarea>
+            </form>
         </div>
     </div>
 </section>
