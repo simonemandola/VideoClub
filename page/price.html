@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Precios | VideoClub</title>
+    <link rel="icon" type="image/png" href="../assets/icon/favicon.png">
+    <meta name="theme-color" content="#19323c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Simone, Paula, Jorge">
+    <meta name="keywords" content="videoclub, alquiler de películas, alquilar películas en valencia">
+    <meta name="description" content="Este sitio web se dedica al alquiler de las mejores películas de todos los tiempos.">
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <!-- JS -->
+    <script defer src="../assets/js/code.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+<header>
+    <div class="container-xl fixed z-50 top-0 left-0 right-0 mx-auto shadow-md bg-white border-b h-16 p-4 md:px-40 flex items-center justify-between box-border">
+        <div class="container w-24 h-full">
+            <a class="w-full h-full inline-block" href="../index.html">
+                <img class="w-full object-contain" src="../assets/img/logo.png" alt="Logo Stromboli VideoClub">
+            </a>
+        </div>
+        <div class="container fixed top-16 left-0 right-0 h-0 bg-red-800 flex items-center justify-center overflow-hidden transition-all duration-1000 ease-in-out menu-collapse md:h-16 md:static md:w-full md:bg-transparent md:justify-end">
+            <nav>
+                <ul class="text-white items-menu md:flex md:justify-end md:items-center md:gap-x-4">
+                    <li class="text-4xl h-16 block md:text-base md:flex md:items-center"><a href="../index.html"><i class="fas fa-home text-3xl pr-2"></i>Inicio</a></li>
+                    <li class="text-4xl h-16 block md:text-base md:flex md:items-center"><a href="../page/movies.html"><i class="fas fa-film text-3xl pr-2"></i>Películas</a></li>
+                    <li class="text-4xl h-16 block md:text-base md:flex md:items-center"><a href="../page/contact.html"><i class="fas fa-headset text-3xl pr-2"></i>Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="fixed top-16 left-0 right-0 h-0 px-4 bg-red-800 flex flex-col items-center justify-center overflow-hidden transition-all duration-1000 ease-in-out search-collapse md:static md:w-0 md:h-8 md:pl-0 md:pr-0 md:bg-white">
+            <form class="w-full relative flex flex-col items-center justify-center">
+                <label for="inputSearch" class="text-white font-medium text-xl mb-2 md:hidden">Buscar película</label>
+                <input class="w-full border-0 bg-white rounded-sm p-2 focus:outline-none md:text-blue-900 md:border md:p-0.5 md:pl-1 md:focus:border" type="text" id="inputSearch" placeholder="Regreso al...">
+                <button class="w-6 h-6 absolute top-12 right-2 -mt-1 z-50 focus:outline-none md:top-2 md:opacity-50" type="button">
+                    <i class="fas fa-search custom-col text-lg"></i>
+                </button>
+            </form>
+        </div>
+        <div class="flex justify-end items-center gap-x-4">
+            <button class="w-6 h-6 focus:outline-none md:pl-2" type="button" id="btnSearch">
+                <i class="fas fa-search custom-col text-xl"></i>
+            </button>
+            <button class="w-6 h-6 focus:outline-none md:hidden" type="button" id="btnMenu">
+                <i class="fas fa-bars custom-col text-xl"></i>
+            </button>
+        </div>
+    </div>
+</header>
+<section class="w-full custom-col-bg h-80 flex flex-col justify-center items-center px-4">
+    <h1 class="text-white uppercase font-extrabold text-center text-3xl m-0">Precios</h1>
+    <p class="text-white text-center text-base px-8">Elige uno de nuestros planes que más se adapta a tus necesidades</p>
+</section>
+<section class="container-xl w-full overflow-hidden -mt-16 px-8 mb-20 flex flex-col md:flex-row md:justify-center md:items-center md:overflow-visible">
+    <article class="order-last md:order-none flex flex-wrap justify-between items-center gap-4 mt-4 md:w-72 h-96">
+        <div class="w-full p-8 flex flex-col justify-center items-center md:h-full bg-white border border-gray-400 rounded">
+            <h2 class="text-lg uppercase font-medium custom-col">Plan base</h2>
+            <div class="flex justify-center items-end gap-2 my-2">
+                <p class="custom-col text-3xl font-bold inline-block m-0">€</p>
+                <span class="custom-col font-bold text-5xl px-4 m-0">20</span>
+                <span class="text-black opacity-50 font-bold m-0">/mes</span>
+            </div>
+            <div class="p-2 ">
+                <ul>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <button class="text-white bg-red-800 border-0 rounded-md py-2 px-8 hover:opacity-80">¡Lo Quiero!</button>
+            </div>
+        </div>
+    </article>
+    <article class="order-1 md:order-none flex flex-wrap justify-between items-center gap-4 mt-4 md:w-96 custom-card-height md:-mt-2 border border-red-800 rounded">
+        <div class="w-full p-8 flex flex-col justify-center items-center bg-white border border-gray-400 rounded md:h-full">
+            <h2 class="text-lg uppercase font-medium custom-col">Plan premium</h2>
+            <div class="flex justify-center items-end gap-2 my-2">
+                <p class="custom-col text-3xl font-bold inline-block m-0">€</p>
+                <span class="custom-col font-bold text-5xl px-4 m-0">30</span>
+                <span class="text-black opacity-50 font-bold m-0">/mes</span>
+            </div>
+            <div class="p-2 ">
+                <ul>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <button class="text-white bg-red-800 border-0 rounded-md py-2 px-8 hover:opacity-80">¡Lo Quiero!</button>
+            </div>
+        </div>
+    </article>
+    <article class="order-last md:order-none flex flex-wrap justify-between items-center gap-4 mt-4 md:w-72 h-96">
+        <div class="w-full p-8 flex flex-col justify-center items-center md:h-full bg-white border border-gray-400 rounded">
+            <h2 class="text-lg uppercase font-medium custom-col">Plan pro</h2>
+            <div class="flex justify-center items-end gap-2 my-2">
+                <p class="custom-col text-3xl font-bold inline-block m-0">€</p>
+                <span class="custom-col font-bold text-5xl px-4 m-0">25</span>
+                <span class="text-black opacity-50 font-bold m-0">/mes</span>
+            </div>
+            <div class="p-2 ">
+                <ul>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                    <li><i class="fas fa-check text-red-600"></i> Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+            <div class="flex justify-center items-center mt-4 md:w-96">
+                <button class="text-white bg-red-800 border-0 rounded-md py-2 px-8 hover:opacity-80">¡Lo Quiero!</button>
+            </div>
+        </div>
+    </article>
+</section>
+<footer>
+    <ul class="footer__ul">
+        <li><a class="footer__li" href="#">Inicio</a></li>
+        <li><a class="footer__li" href="#">Películas</a></li>
+        <li><a class="footer__li" href="#">Videojuegos</a></li>
+        <li><a class="footer__li" href="#">Contacto</a></li>
+    </ul>
+
+    <ul class="footer__logos">
+        <li><a href="#"><img class="footer__logos-fa" src="../assets/icon/facebook.png" alt="a"></a></li>
+        <li><a href="#"><img class="footer__logos-li" src="../assets/icon/linkedin.png" alt="a"></a></li>
+        <li><a href="#"><img class="footer__logos-me" src="../assets/icon/messenger.png" alt="a"></a></li>
+        <li><a href="#"><img class="footer__logos-tw" src="../assets/icon/twitter.png" alt="a"></a></li>
+    </ul>
+
+    <ul class="footer__copy">
+        <li><a class="footer__co" href="#">Copyright</a></li>
+        <li><a class="footer__pp" href="#">Política de Privacidad</a></li>
+        <li><a class="footer__pc" href="#">Política de Cookies</a></li>
+    </ul>
+</footer>
+</body>
+</html>
