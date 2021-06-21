@@ -56,7 +56,14 @@
 
 .swiper-button-next, .swiper-button-prev {
     color: #ffffff !important;
+}
 
+.banner__top--contact {
+    background-image: url("../img/img-contact.jpg")
+}
+
+.mas-vistas, .contacto {
+    background-color: #19323c;
 }
 
 /* FOOTER MOBILE */

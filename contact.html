@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="icon" type="image/png" href="assets/icon/favicon.png">
+    <meta name="theme-color" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Simone, Paula, Jorge">
+    <meta name="keywords" content="videoclub, alquiler de películas, alquilar películas en valencia">
+    <meta name="description" content="Este sitio web se dedica al alquiler de las mejores películas de todos los tiempos.">
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- JS -->
+    <script defer src="assets/js/code.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+<header>
+    <div class="container fixed top-0 mx-auto bg-white border-b w-full h-16 p-4 flex items-center justify-between box-border">
+        <div class="container w-24 h-full">
+            <a class="w-full h-full inline-block" href="index.html">
+                <img class="w-full object-contain" src="assets/img/logo.png" alt="Logo Stromboli VideoClub">
+            </a>
+        </div>
+        <div class="flex justify-end items-center gap-x-4">
+            <button class="w-6 h-6 focus:outline-none" type="button" id="btnSearch">
+                <i class="fas fa-search custom-col text-xl"></i>
+            </button>
+            <button class="w-6 h-6 focus:outline-none" type="button" id="btnMenu">
+                <i class="fas fa-bars custom-col text-xl"></i>
+            </button>
+        </div>
+    </div>
+    <div class="container fixed mx-auto w-screen h-0 bg-red-800 flex items-center justify-center overflow-hidden transition-all duration-1000 ease-in-out menu-collapse">
+        <nav>
+            <ul class="text-white">
+                <li class="text-4xl h-16 block"><a href="index.html"><i class="fas fa-home text-3xl pr-2"></i>Inicio</a></li>
+                <li class="text-4xl h-16 block"><a href="page/movies.html"><i class="fas fa-film text-3xl pr-2"></i>Películas</a></li>
+                <li class="text-4xl h-16 block"><a href="page/contact.html"><i class="fas fa-headset text-3xl pr-2"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container fixed mx-auto w-screen h-0 px-4 bg-red-800 flex flex-col items-center justify-center overflow-hidden transition-all duration-1000 ease-in-out search-collapse">
+        <form class="w-full relative flex flex-col items-center justify-center">
+            <label for="inputSearch" class="text-white font-medium text-xl mb-2">Buscar película</label>
+            <input class="w-full border-0 bg-white rounded-sm p-2 focus:outline-none" type="text" id="inputSearch" placeholder="Regreso al...">
+            <button class="w-6 h-6 absolute top-12 right-2 -mt-1 z-50 focus:outline-none" type="button">
+                <i class="fas fa-search custom-col text-lg"></i>
+            </button>
+        </form>
+    </div>
+</header>
+<section class="banner__top--contact bg-cover bg-no-repeat h-96">
+    <div class="banner__container">
+        <div class="banner__text">
+            <h1 class="text-6xl text-white text-center m-0 pt-48 font-extrabold text-7xl">Contacto</h1>
+        </div>
+    </div>
+</section>
+<section class="contacto">
+    <div class="flex md:flex-row p-32 items-center flex-col">
+        <div class="flex flex-col text-white">
+            <h2 class="text-7xl font-extrabold mb-4">Escríbenos</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad consectetur culpa doloremque ea, laboriosam nesciunt numquam quaerat qui quis saepe sit sunt veniam voluptas!</p>
+            <div class="flex flex-row pt-8">
+                <i class="fas fa-map-marker-alt pr-6"></i>
+                <div class="flex flex-col">
+                    <p>C/ dels Centelles, 17</p>
+                    <p>46006 València, Valencia</p>
+                </div>
+            </div>
+            <div class="flex flex-row pt-8 items-center">
+                <i class="fas fa-phone-alt pr-6"></i>
+                <p>+34 963 95 69 80</p>
+            </div>
+            <div class="flex flex-row pt-8 items-center">
+                <i class="fas fa-envelope pr-6"></i>
+                <p>contacto@stromboli.com</p>
+            </div>
+        </div>
+        <div class="flex flex-col w-full md:pl-32 pt-20">
+            <form>
+                <input type="text" class="bg-transparent border border-white rounded-md w-full h-12 placeholder-white pl-6 text-xl mb-6 text-white" placeholder="Nombre">
+                <input type="text" class="bg-transparent border border-white rounded-md w-full h-12 placeholder-white pl-6 text-xl mb-6 text-white" placeholder="Email">
+                <input type="text" class="bg-transparent border border-white rounded-md w-full h-12 placeholder-white pl-6 text-xl mb-6 text-white" placeholder="Asunto">
+                <textarea name="mensaje" class="bg-transparent border border-white rounded-md w-full h-40 placeholder-white pl-6 text-xl pt-4 text-white" placeholder="Mensaje"></textarea>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
